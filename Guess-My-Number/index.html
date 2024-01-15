@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess-My-Number</title>
+    <link rel="stylesheet" href="input.css" />
+  </head>
+
+  <body class="bg-black text-white">
+    <header class="flex justify-between p-3">
+      <button class="btn again bg-white px-4 py-0.5 font-extrabold text-black">
+        Again!
+      </button>
+      <p>(Between 1 and 20)</p>
+    </header>
+    <main class="mt-16 flex flex-col items-center gap-20">
+      <h2 class="text-6xl font-extrabold">Guess My Number!</h2>
+      <div
+        class="number w-auto bg-white px-6 py-2 text-center text-4xl font-extrabold text-black"
+      >
+        ?
+      </div>
+    </main>
+    <footer class="mt-32 flex justify-center gap-16">
+      <div class="flex flex-col items-center justify-between">
+        <input
+          class="guess h-14 w-2/4 border border-white bg-transparent p-2 text-center text-2xl font-bold text-white"
+          type="number"
+        />
+        <button class="btn check bg-white px-6 py-1 font-bold text-black">
+          Check!
+        </button>
+      </div>
+      <div class="flex flex-col space-y-2 font-semibold">
+        <p class="message mb-6">Start guessing...</p>
+        <p class="label-score">💯 Score: <span class="score">20</span></p>
+        <p class="label-highscore">
+          🎖️ Highscore: <span class="highscore">0</span>
+        </p>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
