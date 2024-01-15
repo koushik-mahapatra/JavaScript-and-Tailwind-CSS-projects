@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal Window | kmp</title>
+    <link rel="stylesheet" href="input.css" />
+  </head>
+  <body
+    class="flex justify-center space-x-16 overflow-x-hidden overflow-y-hidden bg-green-600 p-10"
+  >
+    <button class="show-modal rounded-2xl border bg-white px-2 py-2 text-black">
+      Show modal 1
+    </button>
+    <button class="show-modal rounded-2xl border bg-white px-2 py-2 text-black">
+      Show modal 2
+    </button>
+    <button class="show-modal rounded-2xl border bg-white px-2 py-2 text-black">
+      Show modal 3
+    </button>
+
+    <div
+      class="modal absolute left-1/2 top-1/2 z-20 hidden w-[70%] -translate-x-1/2 -translate-y-1/2 transform rounded-md border border-gray-300 bg-white p-24 shadow-lg"
+    >
+      <button class="close-modal absolute right-8 top-5 text-8xl">
+        &times;
+      </button>
+      <h1 class="mb-8 text-[2.5rem]">I'm a modal window 😍</h1>
+      <p class="text-3xl">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      </p>
+    </div>
+    <div
+      class="overlay absolute left-[-64px] top-0 z-10 hidden h-full w-full bg-black bg-opacity-60"
+    ></div>
+    <script src="script.js"></script>
+  </body>
+</html>
