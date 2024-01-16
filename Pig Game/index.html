@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pig Game</title>
+    <link rel="stylesheet" href="input.css" />
+  </head>
+  <body
+    class="font-nunito flex h-screen items-center justify-center bg-[#333] bg-gradient-to-tl from-purple-800 via-pink-600 to-red-600 text-[62.5%] font-normal"
+  >
+    <main class="relative flex h-3/6 w-2/4 rounded-xl border border-blue-700">
+      <section
+        class="player player--0 player--active flex h-full w-1/2 flex-col items-center justify-start rounded-l-xl bg-slate-100"
+      >
+        <h2 class="name mt-10 text-2xl font-bold uppercase" id="name--0">
+          Player 1
+        </h2>
+        <p class="score mt-3 text-4xl text-red-500" id="score--0">43</p>
+        <div
+          class="current mt-28 flex h-16 w-28 flex-col items-center justify-center space-y-2 rounded-lg bg-red-800 text-white"
+        >
+          <p class="current-label text-xs font-medium uppercase">Current</p>
+          <p class="current-score text-sm" id="current--0">0</p>
+        </div>
+      </section>
+      <section
+        class="player player--1 flex h-full w-1/2 flex-col items-center justify-start rounded-r-xl bg-slate-300"
+      >
+        <h2 class="name mt-10 text-2xl font-bold uppercase" id="name--1">
+          Player 2
+        </h2>
+        <p class="score mt-3 text-4xl text-red-500" id="score--1">24</p>
+        <div
+          class="current mt-28 flex h-16 w-28 flex-col items-center justify-center space-y-2 rounded-lg bg-red-800 text-white"
+        >
+          <p class="current-label text-xs font-medium uppercase">Current</p>
+          <p class="current-score text-sm" id="current--1">0</p>
+        </div>
+      </section>
+      <section
+        class="absolute left-[9.2rem] flex flex-col items-center bg-transparent lg:left-[21.0rem]"
+      >
+        <button
+          class="btn btn--new mt-4 rounded-xl bg-white px-2 py-1 uppercase shadow"
+        >
+          🔄 New game
+        </button>
+        <img src="dice-5.png" alt="Playing dice" class="dice mt-10 h-12" />
+        <button
+          class="btn btn--roll mt-28 rounded-xl bg-white px-2 py-1 uppercase shadow"
+        >
+          🎲 Roll dice
+        </button>
+        <button
+          class="btn btn--hold mt-3 rounded-xl bg-white px-2 py-1 uppercase shadow"
+        >
+          📥 Hold
+        </button>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
